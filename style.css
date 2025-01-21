@@ -3,11 +3,13 @@
     background-color: black;
 }
 .top-left {
-    color: palevioletred;
+    color: rgb(20, 1, 16);
     position: absolute;
     margin-top: 0;
     margin-left: 0;
-    background-color: antiquewhite;
+    border: 2px solid rgb(230, 58, 58);
+    border-radius: 20%;
+    background-color: white;
 }
 .line1 {
     height: 5vh;
@@ -106,11 +108,6 @@
         transform: translate(33vw, 33vh);
     }
 }
-/*.container {
-    background-color: rosybrown;
-    width: auto;
-    height: fit-content;
-}*/
 .imagess {
     background-color: aquamarine;
     margin-top: 35vh;
@@ -123,24 +120,30 @@
 }
 .top-right {
     position: absolute;
-    color: rgb(41, 1, 1);
-    background-color: bisque;
+    color: rgb(20, 1, 16);
     margin-top: 0;
     margin-left: 96vw;
+    border: 2px solid rgb(230, 58, 58);
+    border-radius: 20%;
+    background-color: white;
 }
 .bottom-left {
     position: absolute;
-    color: rgb(41, 1, 1);
-    background-color: bisque;
+    color: rgb(20, 1, 16);
     margin-top: 95vh;
     margin-left: 0;
+    border: 2px solid rgb(230, 58, 58);
+    border-radius: 20%;
+    background-color: white;
 }
 .bottom-right {
     position: absolute;
-    color: rgb(41, 1, 1);
-    background-color: bisque;
+    color: rgb(20, 1, 16);
     margin-top: 95vh;
     margin-left: 95vw;
+    border: 2px solid rgb(230, 58, 58);
+    border-radius: 20%;
+    background-color: white;
 }
 .cursor {
     position: absolute;
@@ -235,27 +238,54 @@
     to { border-right-color: transparent; } 
 }
 
-/*.point { 
-    position: relative;
-    background-color: bisque;
-    margin: 50px 20vw;
-    width: auto;
-    border: 2px solid rgba(181, 122, 236, 0.75);
-    font-size: 10px;
-    border-radius: 20%;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
-} 
-.typewriter-animation { 
-    animation: typewriter 5s steps(100) normal, 
-    blinkingCursor 100ms steps(10) normal; 
-} 
-    
-@keyframes typewriter {
-    from { width: 0; } 
-    to { width: 100%; } 
-} 
-    
-@keyframes blinkingCursor{
-    from {border-right-color: rgba(213, 3, 255, 0.863); } to { border-right-color: transparent; } }*/
+@media (max-width: 768px) {
+    .line1, .line2, .line3, .line4 {
+        height: 4vh;
+        width: 2.5vw;
+    }
+
+    .top-left, .top-right, .bottom-left, .bottom-right {
+        margin-left: 5vw; 
+        margin-top: 5vh;
+    }
+
+    .text {
+        margin-left: 20vw;
+    }
+
+    .imgs {
+        width: 80vw; 
+        margin-left: 5vw;
+    }
+
+    .imgs {
+        width: 40vw;
+        height: 40vh;
+        margin-left: 10vw;
+        background-color: rgb(14, 13, 13);
+    }
+}
+
+@media (max-width: 480px) {
+    .line1, .line2, .line3, .line4 {
+        height: 3vh;
+        width: 2vw;
+    }
+
+    .top-left, .top-right, .bottom-left, .bottom-right {
+        margin-left: 2vw;
+        margin-top: 2vh;
+    }
+
+    .text {
+        margin-left: 10vw;     }
+
+    .imgs {
+        width: 90vw;
+        margin-left: 2vw;
+    }
+
+    .point {
+        font-size: 10px;
+    }
+}
